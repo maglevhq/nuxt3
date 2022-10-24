@@ -39,7 +39,7 @@ defineProps({
     </div>
 
     <img
-      alt="Student"
+      :alt="section.settings.background_image.altText"
       :data-maglev-id="section.settings.background_image.domId"
       :src="section.settings.background_image.url"
       class="h-56 w-full object-cover sm:h-full"

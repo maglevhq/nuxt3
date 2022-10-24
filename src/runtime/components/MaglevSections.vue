@@ -1,15 +1,12 @@
 <script setup lang="ts">
 import { PropType } from 'vue'
-import { PageSection, SectionDefinitionMapping } from '../types'
+import { PageSection } from '../types'
 import { buildSection } from '../utils/convertors'
+import sectionDefinitionMapping from '~~/maglev/section-mapping'
 
 const props = defineProps({
   sections: {
     type: Array as PropType<APIPageSection[]>,
-    required: true
-  },
-  sectionDefinitionMapping: {
-    type: Object as PropType<SectionDefinitionMapping>,
     required: true
   }
 })
@@ -17,7 +14,7 @@ const props = defineProps({
 const currentAPISections = ref<APIPageSection[]>(props.sections)
 
 const currentSections = computed(() => currentAPISections.value.map(apiSection =>
-  buildSection(apiSection, props.sectionDefinitionMapping)))
+  buildSection(apiSection, sectionDefinitionMapping)))
 
 const changeSections = (event) => {
   currentAPISections.value = event.detail.content.pageSections

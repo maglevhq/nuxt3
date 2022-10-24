@@ -27,32 +27,3 @@ export type Feature01Section = CoreTypes.Section & {
   }
   blocks: (Feature01SectionFeatureItemBlock)[]
 }
-
-const sectionDefinitionMapping: CoreTypes.SectionDefinitionMapping = {
-  cta_01: {
-    settings: {
-      title: 'text',
-      body: 'text',
-      background_image: 'image'
-    },
-    blocks: {
-    }
-  },
-  feature_01: {
-    settings: {
-      title: 'text',
-      body: 'text'
-    },
-    blocks: {
-      feature_item: {
-        settings: {
-          name: 'text',
-          icon: 'icon',
-          description: 'text'
-        }
-      }
-    }
-  }
-}
-
-export { sectionDefinitionMapping }

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { sectionDefinitionMapping } from '~~/maglev/types'
-
 const site = useMaglevSite()
 const page = useMaglevPage('index')
 
@@ -11,9 +9,6 @@ useHead({
 
 <template>
   <div>
-    <MaglevSections
-      :section-definition-mapping="sectionDefinitionMapping"
-      :sections="page.sections"
-    />
+    <MaglevSections :sections="page.sections" />
   </div>
 </template>
