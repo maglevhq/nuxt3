@@ -6,9 +6,10 @@ export default defineNuxtConfig({
     MaglevModule
   ],
   maglev: {
-    apiBaseURL: process.env.NUXT_ENV_MAGLEV_API_BASE_URL,
-    apiKey: process.env.NUXT_ENV_MAGLEV_API_KEY,
-    addPlugin: true
+    host: process.env.NUXT_ENV_MAGLEV_HOST,
+    publicApiKey: process.env.NUXT_ENV_MAGLEV_PUBLIC_API_KEY,
+    privateApiKey: process.env.NUXT_ENV_MAGLEV_PRIVATE_API_KEY,
+    livePreview: false
   },
   imports: {
     autoImport: true

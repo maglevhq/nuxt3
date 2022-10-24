@@ -6,10 +6,6 @@ useHead({
   ],
   script: [
     {
-      src: 'http://localhost:3000/maglev/live-preview-client.js',
-      body: true
-    },
-    {
       src: 'https://cdn.tailwindcss.com',
       body: true
     }
