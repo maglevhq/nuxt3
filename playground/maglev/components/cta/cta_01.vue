@@ -21,7 +21,7 @@ defineProps({
           {{ section.settings.title.value }}
         </h2>
 
-        <p
+        <div
           class="hidden text-gray-500 md:mt-4 md:block"
           :data-maglev-id="section.settings.body.domId"
           v-html="section.settings.body.value"
