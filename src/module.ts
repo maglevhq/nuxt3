@@ -1,5 +1,5 @@
 import { fileURLToPath } from 'url'
-import { defineNuxtModule, addPlugin, addImportsDir, createResolver, addComponent, addComponentsDir } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, addImportsDir, createResolver, addComponent, addComponentsDir, addTemplate } from '@nuxt/kit'
 import { name as pkgName, version as pkgVersion } from '../package.json'
 
 export interface ModuleOptions {
